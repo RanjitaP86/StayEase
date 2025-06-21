@@ -1,0 +1,11 @@
+1. Frontend Setup:
+    cd client
+    npm install
+
+2.Backend Setup:
+    cd server
+    npm install
+
+.env file:
+ enter your mongodb string 
+ enter stripe private api key
