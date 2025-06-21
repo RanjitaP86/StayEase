@@ -1,0 +1,136 @@
+/* client/src/components/Footer.css (Full-Bleed Version) */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+:root {
+    --primary-accent: #E53935;
+    --text-primary: #212121;
+    --text-secondary: #757575;
+    --border-color: #E0E0E0;
+}
+
+.site-footer {
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--border-color);
+    padding: 45px 2rem 0 2rem; /* Add horizontal padding directly to the main container */
+    font-size: 15px;
+    line-height: 24px;
+    color: var(--text-secondary);
+}
+
+.footer-content {
+    /* REMOVED max-width and margin: 0 auto */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem; /* Add a gap for spacing between columns */
+}
+
+.footer-section {
+    flex: 1; /* Allows columns to grow and shrink */
+    min-width: 280px; /* Prevents columns from getting too squished */
+    margin-bottom: 2rem;
+}
+
+/* --- No media query changes needed for basic layout, flexbox handles it --- */
+
+.footer-logo {
+    color: var(--text-primary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.footer-section h3 {
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section p {
+    color: var(--text-secondary);
+}
+
+.footer-section.links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section.links ul li a:hover {
+    color: var(--primary-accent);
+}
+
+.social-links {
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: var(--text-secondary);
+    margin-right: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-accent);
+    color: white;
+}
+
+/* --- Contact Form --- */
+.contact-form .text-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    background-color: #f9f9f9;
+    color: var(--text-primary);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form .text-input::placeholder {
+    color: #aaa;
+}
+
+.contact-form .btn-primary {
+    background-color: var(--primary-accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #C62828;
+}
+
+/* --- Full-Width Bottom Bar --- */
+.footer-bottom {
+    text-align: center;
+    padding: 20px 2rem; /* Use padding instead of margin for spacing */
+    /* REMOVED background-color to make it same as footer */
+    border-top: 1px solid var(--border-color);
+    /* Negative margins to break out of the parent's padding */
+    margin-left: -2rem;
+    margin-right: -2rem;
+    margin-top: 20px; 
+    color: var(--text-secondary);
+}
